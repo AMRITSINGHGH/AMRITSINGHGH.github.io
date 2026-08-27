@@ -1,2 +1,2 @@
-# AMRITSINGH.github.io
+# AMRITSINGHGH.github.io
 sapid-590018621
