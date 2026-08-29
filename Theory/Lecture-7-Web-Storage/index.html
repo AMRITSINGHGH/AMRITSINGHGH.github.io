@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 7 - Web Storage & Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Lecture 7: Web Storage API</h1>
+    <p class="subtitle">localStorage, sessionStorage, JSON, and a Persistent Notes App</p>
+  </header>
+
+  <main class="container">
+    <!-- SECTION 2: localStorage Playground -->
+    <section class="section">
+      <h2>Section 2: localStorage Playground</h2>
+      <p>Test all localStorage methods: setItem, getItem, removeItem, clear, key, length</p>
+      <div class="playground">
+        <div class="form-group">
+          <label>Key: <input type="text" id="localStorageKey" placeholder="e.g. favColor" value="favColor"></label>
+          <label>Value: <input type="text" id="localStorageValue" placeholder="e.g. blue" value="blue"></label>
+        </div>
+        <div class="button-group">
+          <button onclick="localSetItem()">setItem()</button>
+          <button onclick="localGetItem()">getItem()</button>
+          <button onclick="localRemoveItem()">removeItem()</button>
+          <button onclick="localClear()">clear()</button>
+          <button onclick="showAllLocal()">Show All</button>
+        </div>
+        <pre id="localOutput">Click a button to see localStorage content</pre>
+      </div>
+    </section>
+
+    <!-- SECTION 3: sessionStorage Playground -->
+    <section class="section">
+      <h2>Section 3: sessionStorage Playground</h2>
+      <p>Test sessionStorage (data disappears when tab closes)</p>
+      <div class="playground">
+        <div class="form-group">
+          <label>Key: <input type="text" id="sessionStorageKey" placeholder="e.g. tempData" value="tempData"></label>
+          <label>Value: <input type="text" id="sessionStorageValue" placeholder="e.g. hello" value="hello"></label>
+        </div>
+        <div class="button-group">
+          <button onclick="sessionSetItem()">setItem()</button>
+          <button onclick="sessionGetItem()">getItem()</button>
+          <button onclick="sessionRemoveItem()">removeItem()</button>
+          <button onclick="sessionClear()">clear()</button>
+          <button onclick="showAllSession()">Show All</button>
+        </div>
+        <pre id="sessionOutput">Click a button to see sessionStorage content</pre>
+      </div>
+    </section>
+
+    <!-- SECTION 7: JSON Playground -->
+    <section class="section">
+      <h2>Section 7: JSON Playground</h2>
+      <p>Practice JSON.stringify() and JSON.parse()</p>
+      <div class="playground">
+        <div class="form-group">
+          <label>Key: <input type="text" id="jsonKey" placeholder="e.g. user" value="user"></label>
+          <label>JSON Value:</label>
+          <textarea id="jsonValue" rows="4" placeholder='{"name":"Alice","age":25}'>{"name":"Alice","age":25}</textarea>
+        </div>
+        <div class="button-group">
+          <button onclick="jsonSaveToLocal()">Stringify → localStorage</button>
+          <button onclick="jsonLoadFromLocal()">Parse ← localStorage</button>
+          <button onclick="jsonSaveToSession()">Stringify → sessionStorage</button>
+          <button onclick="jsonLoadFromSession()">Parse ← sessionStorage</button>
+        </div>
+        <pre id="jsonOutput">JSON output will appear here</pre>
+      </div>
+    </section>
+
+    <!-- SECTION 12: Notes App -->
+    <section class="section">
+      <h2>Section 12: Persistent Notes App</h2>
+      <p>Complete app with localStorage persistence</p>
+      
+      <form id="noteForm" class="form">
+        <input type="text" id="noteText" placeholder="Enter a note..." maxlength="500" required>
+        <button type="submit">Add Note</button>
+      </form>
+
+      <p id="status" class="status"></p>
+      <div id="notesList" class="notes-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
