@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amriit | Backend Development</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --blue: #075ad9; --line: #dbe3ef; --page: #f7f9fc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--page); }
+    header { padding: 56px 24px 42px; color: white; background: linear-gradient(135deg, #063f96, #0877e8); }
+    main, header > div { max-width: 980px; margin: auto; }
+    h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.7rem); letter-spacing: -.04em; }
+    header p { max-width: 610px; margin: 12px 0 0; font-size: 1.1rem; opacity: .92; }
+    main { padding: 36px 24px 64px; }
+    .notice { padding: 16px 18px; border-left: 4px solid var(--blue); background: #eaf3ff; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 20px; }
+    section { margin-top: 38px; }
+    .card { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: 0 4px 14px rgb(20 40 70 / .05); }
+    h2, h3 { margin-top: 0; } h3 { margin-bottom: 8px; }
+    a { color: var(--blue); font-weight: 650; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+    .button { display: inline-block; padding: 10px 14px; border-radius: 7px; color: white; background: var(--blue); text-decoration: none; }
+    ul { padding-left: 20px; } li + li { margin-top: 7px; }
+    footer { margin-top: 42px; color: #596579; font-size: .92rem; }
+  </style>
+</head>
+<body>
+  <header><div>
+    <h1>AMRIIT</h1>
+    <p>Backend Development coursework &mdash; SAP ID: 590018621</p>
+  </div></header>
+  <main>
+    <p class="notice">This site is the public starting point for this repository. Use the links below to open the available browser demos or view every source file on GitHub.</p>
+
+    <section>
+      <h2>Course work</h2>
+      <div class="grid">
+        <article class="card"><h3>Laboratory work</h3><p>Experiments and reports, including static web pages and server-side Node projects.</p><a href="#labs">Open labs</a></article>
+        <article class="card"><h3>Theory tasks</h3><p>Node.js, EJS, Flask, FastAPI, and development-tools exercises.</p><a href="#theory">Open theory tasks</a></article>
+        <article class="card"><h3>Full source code</h3><p>Browse every folder and file in the GitHub repository.</p><a class="button" href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io">View repository</a></article>
+      </div>
+    </section>
+
+    <section id="labs">
+      <h2>Labs</h2>
+      <div class="grid">
+        <article class="card"><h3>Experiment 1</h3><ul><li><a href="Lab/Exp%201/parta/">Part A demo</a></li><li><a href="Lab/Exp%201/partb/">Part B demo</a></li><li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Lab/Exp%201">Source and report</a></li></ul></article>
+        <article class="card"><h3>Experiment 12</h3><ul><li><a href="Lab/Exp%2012/Exp%2012/parta/">Part A files</a></li><li><a href="Lab/Exp%2012/Exp%2012/partb/">Part B page</a></li><li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Lab/Exp%2012">Source and report</a></li></ul></article>
+      </div>
+    </section>
+
+    <section id="theory">
+      <h2>Theory</h2>
+      <div class="card"><ul>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-1-Hello-World">Task 1: Hello World</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-2-Multiple-routes">Task 2: Multiple Routes</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-3-JSON-Data">Task 3: JSON Data</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-4-HTML-Responses">Task 4: HTML Responses</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-5-EJS-Templating">Task 5: EJS Templating</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-6-Flask-Hello-World">Task 6: Flask Hello World</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-7-Flask-Hello-World">Task 7: Flask Hello World</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/Task-8-DevTools">Task 8: DevTools</a></li>
+        <li><a href="https://github.com/AMRITSINGHGH/AMRITSINGHGH.github.io/tree/main/Theory/ssr-python">SSR Python project</a></li>
+      </ul></div>
+    </section>
+    <footer>Server-side Node.js, Flask, and FastAPI projects are included as source code; GitHub Pages can host only static files and cannot run their backend servers.</footer>
+  </main>
+</body>
+</html>
