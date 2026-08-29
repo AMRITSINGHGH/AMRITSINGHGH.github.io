@@ -11,6 +11,7 @@
     header { padding: 56px 24px 42px; color: white; background: linear-gradient(135deg, #063f96, #0877e8); }
     main, header > div { max-width: 980px; margin: auto; }
     h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.7rem); letter-spacing: -.04em; }
+    h1 a { color: inherit; text-decoration: none; }
     header p { max-width: 610px; margin: 12px 0 0; font-size: 1.1rem; opacity: .92; }
     main { padding: 36px 24px 64px; }
     .notice { padding: 16px 18px; border-left: 4px solid var(--blue); background: #eaf3ff; }
@@ -26,13 +27,13 @@
 </head>
 <body>
   <header><div>
-    <h1>AMRIIT</h1>
+    <h1><a href="#course-work" aria-label="Open Backend Development course work">AMRIIT</a></h1>
     <p>Backend Development coursework &mdash; SAP ID: 590018621</p>
   </div></header>
   <main>
     <p class="notice">This site is the public starting point for this repository. Use the links below to open the available browser demos or view every source file on GitHub.</p>
 
-    <section>
+    <section id="course-work">
       <h2>Course work</h2>
       <div class="grid">
         <article class="card"><h3>Laboratory work</h3><p>Experiments and reports, including static web pages and server-side Node projects.</p><a href="#labs">Open labs</a></article>
